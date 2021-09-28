@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDEAM</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="js/bootstrap.js">
+    <link rel="icon" href="img/ICONO.png">
+    <script src="js/taller.js"></script>
+</head>
+<body background="img/LogoIDEAM.jpg"> 
+    <div class="text-center bg-primary text-dark fw-bold">
+        <h1> 
+            『  I  D  E  A  M 』<br>
+        </h1>
+        <h5>
+            INSTITUTO DE HIDROLOGIA, METEOROLOGIA Y ESTUDIOS AMBIENTALES
+        </h5> <br>
+      </div>
+ <br>
+ 
+<!--------------------------EJERCICIO---------------------------->
+<div class="container">
+<p><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><></p>
+<hr>
+<hr>
+    <div class="row">
+        <div class="col-lg-4 text-center">
+            <p>
+                <b>MISION</b> <br>
+                <b>El Ideam tiene la función de ser el nodo central del Sistema de Información Ambiental, que genera conocimiento, produce información confiable, consistente y oportuna, sobre el estado y las dinámicas de los recursos naturales y del medio ambiente y la toma de decisiones por parte de los sectores público, privado y la ciudadanía en general.</b>
+
+            </p>
+         </div> 
+         <div class="col-lg-4 text-center">
+            <img src="img/mision-vision.jpg" width="350"> 
+         </div>  
+         <div class="col-lg-4 text-center">
+            <p>
+                <b>VISION</b> <br>
+               <b>A lo largo del tiempo ir logrando la excelencia en todo campo, <br> como la entidad que genera y suministra información hidrológica, meteorológica y ambiental con la toma de decisiones relacionadas con el desarrollo sostenible y la prevención de los efectos de cambio climático.</b> 
+
+            </p>
+         </div>  
+       </div>
+    <hr>  
+
+    <p> <b>
+        Deacuerdo con el IDEAM , la toma de decisiones o alternativas para un desarrollo sostenible y de prevencion encontramos el ICA donde la meta a traves de sus valores  se quiere es la sensibilizacion, la capacidad humana e institucional respecto a la mitigacion del cambio climatico, la adaptacion a el, la reduccion de sus efectos y alerta temprana. 
+    </b>
+    </p>
+     <div class="row">
+         <div class="col-lg-6">
+            <img src="img/ica imagen.jpg" width="500">
+         </div>
+         <div class="col-lg-6">
+            <img src="img/TABLA ICA.jpg" width="540">
+         </div>
+        
+     </div>
+    
+    <br>
+    <hr>
+
+    
+    <div class="text-center fw-bold">
+        <h2>¿QUIERES SABER EL VALOR DEL ICA SEGUN TU UBICACION?</h2>
+        <h6>Llena el siguiente formulario, y conoceras la respuesta</h6> 
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-8" >
+            <form>
+                <div class="text-center"><h4>DATOS PERSONALES</h4></div>
+                <label><b>Primer nombre</b></label>
+                <input type="text" id="txt1" placeholder="Primer nombre">
+                <label><b>Segundo nombre</b></label>
+                <input type="text" id="txt2" placeholder="Segundo nombre"> <br> <br>
+                <label><b>Primer apellido</b></label>
+                <input type="text" id="txt3" placeholder="Primer apellido"> 
+                <label><b>Segundo apellido</b></label>
+                <input type="text" id="txt4" placeholder="Segundo Apellido"> <br> 
+                <label><b>Sexo</b></label> <br>
+                <input type="radio" id="radio1" name="femenino"> Femenino 
+                <input type="radio" id="radio2" name="masculino"> Masculino 
+                <input type="radio" id="radio3" name="indefinido"> Indefinido <br> <br>
+                <label> <b>Fecha de nacimiento</b></label> 
+                <input type="date" id="dt1"> <br> <br>
+                <label> <b>Edad</b></label> 
+                <input type="number" id="num1" placeholder="Edad"><br> <br>
+                <label><b>Tipo de documento</b></label>
+                <select name="tipos de documento">
+                    <option id="select1" value="selecciones">Seleccione</option>
+                    <option id="select2" value="CC">C.C</option>
+                    <option id="select3" value="TI">T.I</option>
+                    <option id="select4" value="C. EXTRANJERA">C. Estranjera</option>
+                    <option id="select5" value="Pasaporte">Pasaporte</option>
+                </select> <br> <br>
+                <label><b>No.</b></label>
+                <input type="text" id="txt5" placeholder="No. de documento"> <br>
+                <br>
+                <input type="button" value="Guardar " class="btn btn-outline-primary" onclick="mostrar()"> 
+            </form>
+        </div>
+
+        <div class="col-lg-4">
+            <table class="table">
+                <thead>
+                     <th scope="col">---LOS DATOS SON---</th>
+                </thead>
+                <tbody> 
+                    <td><div id="datos"></div></td> 
+                 </tbody>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-lg-8" >
+            <form>
+                <div class="text-center"><h4>DATOS VIVIENDA</h4></div>
+                <label><b>Nacionalidad</b></label>
+                <input type="text" id="txtn1" placeholder="Nacionalidad"><br> <br>
+                <label><b>Ciudad/municipio</b></label>
+                <input type="text" id="txtn2" placeholder="Ciudad/Municipio"> <br> <br>
+                <label><b>Dirrecion</b></label> 
+                <input type="text" id="txtn3" placeholder="Direccion"> <br> <br>
+                <label><b>Estrato</b></label>
+                <input type="number" id="est1" placeholder="Estrato"> <br><br> 
+                <br>
+                <input type="button" value="Guardar "class="btn btn-outline-primary" onclick="mostrar2()"> 
+            </form>
+        </div>
+
+        <div class="col-lg-4">
+            <table class="table">
+                <thead>
+                     <th scope="col">---LOS DATOS SON---</th>
+                </thead>
+                <tbody> 
+                     <td><div id="datos2"></div></td> 
+                 </tbody>
+            </table>
+            
+        </div>
+    </div>
+    <hr>
+
+<form>
+    <label><b>Ingrese el valor de la concentracion de CO 8h</b></label><br>
+  <input type="text" id="co" class="form-control" placeholder="Valor de concentracion de CO 8h en ppm"><br>
+  <br>
+  <input type="button" value="Calcular ICM" class="btn btn-outline-primary" onclick="calidadAire()">
+  <div id="respuesta">
+  </div>
+  </div>
+</form>
+    
+
+    
+</div>
+<br>
+<br>
+<!--------------------------------------------------------------->   
+
+
+</div>
+<div class="text-center bg-primary text-dark fw-bold">
+    <a class="text-dark" href="http://www.ideam.gov.co/" target="_BLANK"  > Pagina oficial del IDEAM </a> <br>
+    Sistema Nacional Ambiental: atencionalciudadano@ideam.gov.co<br>
+    Línea nacional <br>
+     018000110012 <br>
+     Horario de Atención: Lunes a viernes 8:00 AM a 5:00 PM
+   
+</div>
